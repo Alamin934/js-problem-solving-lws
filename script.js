@@ -54,3 +54,13 @@ function countVowels(sentence) {
 }
 
 countVowels("I Love My Country");
+
+
+//How to remove duplicate number from an array?
+
+const numbers = [1, 3, 4, 5, 3, 5, 7, 8, 9, 4, 8, 10, 12, 15];
+
+const duplicate = numbers.filter(function (value, index, array) {
+    return array.indexOf(value) !== index
+})
+console.log(duplicate)
