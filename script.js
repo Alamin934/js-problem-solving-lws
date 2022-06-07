@@ -19,4 +19,18 @@ console.log(students.sort());
 
 const roll_numbers = [3, 2, 6, 4, 75, 34, 23, 5, 8, 7];
 
-console.log(roll_numbers.sort((a, b) => { return a - b }))
+console.log(roll_numbers.sort((a, b) => { return a - b }));
+
+
+//How can we check the year is Leap year or not?
+
+function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log(`${year} is a leap year`)
+    }
+    else {
+        console.log(`${year} is not a leap year`);
+    }
+}
+
+isLeapYear(2026);
