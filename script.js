@@ -5,3 +5,10 @@ function getRndInteger(min, max) {
 }
 
 getRndInteger(1, 6);
+
+
+// How do we sort the names of everyone in our classroom alphabetically?
+
+const students = ["Abir", "Shams", "Kiron", "Rahim", "Hasan", "Sajjad"];
+
+console.log(students.sort());
