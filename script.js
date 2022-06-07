@@ -34,3 +34,23 @@ function isLeapYear(year) {
 }
 
 isLeapYear(2026);
+
+// How do I determine the number of vowels in a sentence?
+
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+
+function countVowels(sentence) {
+    let count = 0;
+    const letters = Array.from(sentence);
+
+    letters.forEach((value) => {
+        if (vowels.includes(value)) {
+            count++;
+        }
+
+    })
+    return count;
+
+}
+
+countVowels("I Love My Country");
